@@ -1,0 +1,20 @@
+{
+  "name": "ioserv",
+  "version": "0.1.0",
+  "description": "A library for connecting to UnrealIRCd servers as a server. Useful for making things similar to network services, Syn, etc.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "irc",
+    "server",
+    "bot"
+  ],
+  "author": "iovoid",
+  "license": "ISC",
+  "dependencies": {
+    "node-units": "^0.1.7",
+    "sandbox": "^0.8.6"
+  }
+}
