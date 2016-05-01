@@ -12,6 +12,10 @@
     "bot"
   ],
   "author": "iovoid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/io4/ioserv"
+  },
   "license": "ISC",
   "dependencies": {
     "node-units": "^0.1.7",
