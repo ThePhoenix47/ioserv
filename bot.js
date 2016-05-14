@@ -159,7 +159,7 @@ bot.init = function(pconfig) {
      for (i in config.modules) {
       bot.load(config.modules[i])
      }
-     bot.writeSocket("NICK "+config.bname+" 1 " + (new Date).getTime() / 1000 + "+config.bname+" "+config.bhost+" "+config.sname+" 0 +SNaio "+config.sname+" uohM9w== :"+config.bname);
+     bot.writeSocket("NICK "+config.bname+" 1 " + (new Date).getTime() / 1000 + " "+config.bname+" "+config.bhost+" "+config.sname+" 0 +SNaio "+config.sname+" uohM9w== :"+config.bname);
     }, 6000);
    });
   });
@@ -272,7 +272,7 @@ bot.on("PRIVMSG", function(data, parsed) {
   console.log("User's host is " + (bot.nicks[nick] || new Array(7))[7]);
  }
 });
-bot.nicks[config.bname] = "1 " + (new Date).getTime() / 1000 + "+config.bname+" "+config.bhost+" "+config.sname+" 0 +SNaio "+config.sname+" uohM9w== :"+config.bname".split(" ");
+bot.nicks[config.bname] = ("1 " + (new Date).getTime() / 1000 + " "+config.bname+" "+config.bhost+" "+config.sname+" 0 +SNaio "+config.sname+" uohM9w== :"+config.bname).split(" ");
 bot.on("NICK", function(data) {
  var parts = data.split(" ");
  bot.nicks[parts[1]] = parts.slice(2);
